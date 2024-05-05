@@ -40,10 +40,22 @@
 <!-- partial -->
 <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.concat.min.js'></script>
-<script src="script.js"></script>
 <audio src="https://github.com/Jabalsurya2105/database/raw/master/music/impossible.mp3" id="musik" loop></audio>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="welcome.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', async () => {
+let musik = document.getElementById('musik');
+
+Swal.fire({
+title: "Welcome To",
+text: "Chat AI by SuryaDev",
+imageUrl: "https://feeldreams.github.io/cilukba.gif",
+imageWidth: 200,
+imageHeight: 200,
+imageAlt: "SuryaDev"
+}).then(async() => await musik.play())
+})
+</script>
 <script src="script.js"></script>
 </body>
 </html>
