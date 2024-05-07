@@ -16,18 +16,7 @@
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.min.css'>
 <style>
-/*--------------------
-Mixins
---------------------*/
-/*--------------------
-Body
---------------------*/
-body {
-background: linear-gradient(135deg, #044f48, #2a7561);
-height: 0;
-width: 0;
-}
-
+/*--------------- Body ---------------*/
 body {
 width: 0;
 background: linear-gradient(135deg, #044f48, #2a7561);
@@ -49,9 +38,7 @@ filter: blur(80px);
 transform: scale(1.2);
 }
 
-/*--------------------
-Chat
---------------------*/
+/*--------------- Chat ---------------*/
 .chat {
 position: absolute;
 top: 50%;
@@ -60,7 +47,7 @@ width: 100%;
 transform: translate(-50%, -50%);
 background: linear-gradient(135deg, #044f48, #2a7561);
 box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
-height: 800px;
+height: 675px;
 max-height: 100vh;
 z-index: 3;
 overflow: hidden;
@@ -69,9 +56,7 @@ justify-content: space-between;
 flex-direction: column;
 }
 
-/*--------------------
-Chat Title
---------------------*/
+/*--------------- Chat Title ---------------*/
 .chat-title {
 flex: 0 1 0px;
 position: relative;
@@ -110,14 +95,13 @@ margin: 0;
 padding: 0;
 border: 2px solid rgba(255, 255, 255, 0.24);
 }
+
 .chat-title .avatar img {
 width: 100%;
 height: auto;
 }
 
-/*--------------------
-Messages
---------------------*/
+/*--------------- Messages ---------------*/
 .messages {
 flex: 1 1 auto;
 color: rgba(255, 255, 255, 0.5);
@@ -271,9 +255,7 @@ margin-left: 7px;
 animation-delay: 0.3s;
 }
 
-/*--------------------
-Message Box
---------------------*/
+/*--------------- Message Box ---------------*/
 .message-box {
 flex: 0 1 40px;
 width: 100%;
@@ -317,9 +299,7 @@ transition: background 0.2s ease;
 background: #1D7745;
 }
 
-/*--------------------
-Custom Srollbar
---------------------*/
+/*--------------- Custom Srollbar ---------------*/
 .mCSB_scrollTools {
 margin: 1px -3px 1px 0;
 opacity: 0;
@@ -334,9 +314,7 @@ padding: 0 10px;
 background-color: rgba(0, 0, 0, 0.5) !important;
 }
 
-/*--------------------
-Bounce
---------------------*/
+/*--------------- Bounce ---------------*/
 @-webkit-keyframes bounce {
 0% {
 transform: matrix3d(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
